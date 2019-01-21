@@ -1,0 +1,1 @@
+ var flatsomeVars = {"ajaxurl":"https:\/\/muadogocu.vn\/wp-admin\/admin-ajax.php","rtl":"","sticky_height":"70","user":{"can_edit_pages":true}};
