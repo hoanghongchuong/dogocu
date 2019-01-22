@@ -11,7 +11,7 @@
               <!-- Logo -->
               <div id="logo" class="flex-col logo">
                  <!-- Header logo -->
-                 <a href="" title="{{$setting->title}}" rel="home">
+                 <a href="{{url('')}}" title="{{$setting->title}}" rel="home">
                  <img width="200" height="90" src="{{asset('upload/hinhanh/'.$setting->photo)}}" class="header_logo header-logo" alt="{{$setting->title}}"/><img  width="200" height="90" src="{{asset('upload/hinhanh/'.$setting->photo)}}" class="header-logo-dark" alt="{{$setting->title}}"/></a>
               </div>
               <!-- Mobile Left Elements -->

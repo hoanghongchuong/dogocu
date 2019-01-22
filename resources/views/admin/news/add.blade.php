@@ -27,9 +27,9 @@
       			<div class="nav-tabs-custom">
 	                <ul class="nav nav-tabs">
 	                  	<li class="active"><a href="#tab_1" data-toggle="tab" aria-expanded="false">Thông tin chung</a></li>
-	                  	@if($_GET['type']!='hinh-anh')
+	                  	
 	                  	<li><a href="#tab_2" data-toggle="tab" aria-expanded="true">Nội dung</a></li>
-	                  	@endif
+	                  
 	                  	@if($_GET['type']=='hinh-anh')
 	                  	<li><a href="#tab_5" data-toggle="tab" aria-expanded="true">Album ảnh</a></li>
 	                  	@endif
@@ -57,7 +57,7 @@
 									</div>
 									
 									<div class="clearfix"></div>
-									@if($_GET['type'] == 'thiet-ke' || $_GET['type'] == 'thi-cong')
+									@if($_GET['type'] == 'dich-vu')
 									<div class="form-group">
 								      	<label for="ten">Danh mục cha</label>
 								      	<select name="txtNewsCate" class="form-control">

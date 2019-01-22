@@ -27,7 +27,7 @@
 	                <ul class="nav nav-tabs">
 	                  	<li class="active"><a href="#tab_1" data-toggle="tab" aria-expanded="false">Thông tin chung</a></li>
 	                  	<li><a href="#tab_2" data-toggle="tab" aria-expanded="true">Nội dung</a></li>
-	                  	<!-- <li><a href="#tab_3" data-toggle="tab" aria-expanded="true">Album hình</a></li> -->
+	                  	<li><a href="#tab_3" data-toggle="tab" aria-expanded="true">Album hình</a></li>
 	                  	<li><a href="#tab_4" data-toggle="tab" aria-expanded="true">SEO</a></li>
 	                </ul>
 	                <div class="tab-content">

@@ -12,6 +12,8 @@ class Products extends Model {
 
 	public function pimg(){
 		return $this->hasMany('App\Images','product_id');
+	}	
+	public function category(){
+		return $this->belongsTo('App\ProductCate','cate_id');
 	}
-	
 }

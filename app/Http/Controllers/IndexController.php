@@ -60,9 +60,11 @@ class IndexController extends Controller {
 	}
 	public function getProduct(Request $req)
 	{
-		$cate_pro = DB::table('product_categories')->where('status',1)->where('parent_id',0)->orderby('stt','asc')->get();
-		
-		$products = DB::table('products')->where('status',1)->where('com','san-pham')->paginate(18);
+		$cate_pro = DB::table('product_categories')->where('status',1)
+		->where('com','san-pham')
+		->where('parent_id',0)->orderby('stt','asc')->get();
+		$sort = $req->sort_order;
+		$products = Products::where('status',1)->where('com','san-pham')->orderBy('id',$sort)->paginate(18);
 		$com='san-pham';		
 		$title = "Sản phẩm";
 		$keyword = "Sản phẩm";
@@ -82,18 +84,16 @@ class IndexController extends Controller {
         $com = 'san-pham';
         $product_cate = ProductCate::select('*')->where('status', 1)->where('alias', $id)->where('com','san-pham')->first();        
         if (!empty($product_cate)) {  
-
-        	// $cate_parent = DB::table('product_categories')->where('id', $product_cate->parent_id)->first();
-
-        	// $cateChilds = DB::table('product_categories')->where('parent_id', $product_cate->id)->get();
-        	
-        	// $array_cate[] = $product_cate->id;
-        	// if($cateChilds){
-        	// 	foreach($cateChilds as $cate){
-        	// 		$array_cate[] = $cate->id;
-        	// 	}
-        	// }        	
-        	// $products = Products::whereIn('cate_id', $array_cate)->orderBy('id','desc')->paginate(18);
+        	$sort = $req->sort_order;
+        	$cate_parent = DB::table('product_categories')->where('id', $product_cate->parent_id)->first();
+        	$cateChilds = DB::table('product_categories')->where('parent_id', $product_cate->id)->get();
+        	$array_cate[] = $product_cate->id;
+        	if($cateChilds){
+        		foreach($cateChilds as $cate){
+        			$array_cate[] = $cate->id;
+        		}
+        	}        	
+        	$products = Products::whereIn('cate_id', $array_cate)->orderBy('id',$sort)->paginate(18);
             if (!empty($product_cate->title)) {
                 $title = $product_cate->title;
             } else {
@@ -125,7 +125,7 @@ class IndexController extends Controller {
 	{
         
         $cate_pro = DB::table('product_categories')->where('status',1)->orderby('id','asc')->get();
-		$product_detail = DB::table('products')->select()->where('status',1)->where('alias',$id)->get()->first();
+		$product_detail = Products::where('status',1)->where('alias',$id)->get()->first();
 		if(!empty($product_detail)){
 			$banner_danhmuc = DB::table('lienket')->select()->where('status',1)->where('com','chuyen-muc')->where('link','san-pham')->get()->first();
 			// sản phẩm đã xem
@@ -135,7 +135,7 @@ class IndexController extends Controller {
 
 			$album_hinh = DB::table('images')->select()->where('product_id',$product_detail->id)->orderby('id','asc')->get();		
 			$cateProduct = DB::table('product_categories')->select('name','alias')->where('id',$product_detail->cate_id)->first();
-			$productSameCate = DB::table('products')->select()->where('status',1)->where('id','<>',$product_detail->id)->where('cate_id',$product_detail->cate_id)->orderby('stt','desc')->take(20)->get();			
+			$productSameCate = Products::where('status',1)->where('id','<>',$product_detail->id)->where('cate_id',$product_detail->cate_id)->orderby('stt','desc')->take(20)->get();			
 			
 			// Cấu hình SEO
 			if(!empty($product_detail->title)){

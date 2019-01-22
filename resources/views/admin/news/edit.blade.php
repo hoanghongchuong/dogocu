@@ -51,11 +51,10 @@
 								      	@endif
 									</div>									
 									<div class="clearfix"></div>
-									@if($_GET['type'] == 'thiet-ke' || $_GET['type'] == 'thi-cong')
+									@if($_GET['type'] == 'dich-vu')
 									<div class="form-group">
 								      	<label for="ten">Danh mục bài viết</label>
 								      	<select name="txtNewsCate" class="form-control">
-
 								      		<option value="0">Chọn danh mục</option>
 								      		<?php cate_parent($parent,0,"--",$data->cate_id) ?>
 								      	</select>
