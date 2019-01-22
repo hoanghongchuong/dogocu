@@ -57,7 +57,11 @@ Route::post('cart/update',['as' => 'updateCart', 'uses' => 'IndexController@upda
 Route::get('xoa-gio-hang/{id}','IndexController@deleteCart');
 Route::post('gui-don-hang', ['as' =>'postOrder', 'uses'=> 'IndexController@postOrder']);
 Route::get('xoa-all','IndexController@deleteAllCart')->name('deleteCart');
+
 Route::get('dich-vu',['as'=>'getDichvu', 'uses'=>'IndexController@getDichvu']);
+Route::get('dich-vu/{alias}.html',['as'=>'getServiceDetail', 'uses'=>'IndexController@getServiceDetail']);
+Route::get('dich-vu/{alias}',['as'=>'getListService', 'uses'=>'IndexController@getListService']);
+
 Route::post('card/check',['as'=>'checkCard', 'uses'=>'IndexController@checkCard']);
 
 Route::get('tin-tuc',['as'=>'getListNews', 'uses'=>'IndexController@getNews']);

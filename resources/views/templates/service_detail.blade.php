@@ -12,7 +12,7 @@
                   <header class="entry-header">
                      <div class="entry-header-text entry-header-text-top text-center">
                         <h6 class="entry-category is-xsmall">
-                           <a href="{{url('tin-tuc')}}" rel="category tag">Tin Tức</a>
+                           <a href="{{url('dich-vu')}}" rel="category tag">Dịch vụ</a>
                         </h6>
                         <h1 class="entry-title">{{$news_detail->name}}</h1>
                         <div class="entry-divider is-divider small"></div>
@@ -48,13 +48,13 @@
                     <span class="widget-title "><span>Bài Viết Gần Đây</span></span>
                     <div class="is-divider small"></div>
                     <ul>
-                        @foreach($tintuc as $item)
+                        @foreach($postSame as $item)
                         <li class="recent-blog-posts-li">
                           <div class="flex-row recent-blog-posts align-top pt-half pb-half">
                              <!-- .flex-col -->
                              <div class="flex-col flex-grow">
-                                <a href="{{url('tin-tuc/'.$item->alias.'.html')}}" title="{{$item->name}}">{{$item->name}}</a>
-                                <span class="post_comments op-7 block is-xsmall"><a href="{{url('tin-tuc/'.$item->alias.'.html')}}"></a></span>
+                                <a href="{{url('dich-vu/'.$item->alias.'.html')}}" title="{{$item->name}}">{{$item->name}}</a>
+                                <span class="post_comments op-7 block is-xsmall"><a href="{{url('dich-vu/'.$item->alias.'.html')}}"></a></span>
                              </div>
                           </div>
                           <!-- .flex-row -->

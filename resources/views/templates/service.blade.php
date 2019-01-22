@@ -9,7 +9,7 @@
            <div class="row">
               <div class="large-12 text-center col">
                  <h1 class="page-title is-large uppercase">
-                   <span>Tin Tức</span>   
+                   <span>Dịch vụ</span>   
                  </h1>
               </div>
            </div>
@@ -21,10 +21,10 @@
                     @foreach($tintuc as $item)
                     <div class="col md-6 large-6">
                         <div class="img">
-                           <a href="{{url('tin-tuc/'.$item->alias.'.html')}}" title=""><img src="{{asset('upload/news/'.$item->photo)}}" alt="{{$item->name}}"></a>
+                          <a href="{{url('dich-vu/'.$item->alias.'.html')}}" title=""><img src="{{asset('upload/news/'.$item->photo)}}" alt="{{$item->name}}"></a>
                         </div>
                         <div class="text">
-                           <h1><a href="{{url('tin-tuc/'.$item->alias.'.html')}}" title="{{$item->name}}">{{$item->name}}</a></h1>
+                           <h1><a href="{{url('dich-vu/'.$item->alias.'.html')}}" title="{{$item->name}}">{{$item->name}}</a></h1>
                            <p>{!! $item->mota !!}</p>
                         </div>
                     </div>
@@ -54,8 +54,8 @@
                           <div class="flex-row recent-blog-posts align-top pt-half pb-half">
                              <!-- .flex-col -->
                              <div class="flex-col flex-grow">
-                                <a href="{{url('tin-tuc/'.$item->alias.'.html')}}" title="{{$item->name}}">{{$item->name}}</a>
-                                <span class="post_comments op-7 block is-xsmall"><a href="{{url('tin-tuc/'.$item->alias.'.html')}}"></a></span>
+                                <a href="{{url('dich-vu/'.$item->alias.'.html')}}" title="{{$item->name}}">{{$item->name}}</a>
+                                <span class="post_comments op-7 block is-xsmall"><a href="{{url('dich-vu/'.$item->alias.'.html')}}"></a></span>
                              </div>
                           </div>
                           <!-- .flex-row -->

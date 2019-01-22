@@ -45,6 +45,7 @@
     <link rel='stylesheet'  href="{{asset('public/css/style.css')}}" type='text/css' media='all' />
     <link rel='stylesheet'  href="{{asset('public/css/cus.css')}}" type='text/css' media='all' />
     <link rel='stylesheet'  href="{{asset('public/css/slick.css')}}" type='text/css' media='all' />
+    <link rel='stylesheet'  href="{{asset('public/css/owl.carousel.min.css')}}" type='text/css' media='all' />
     <script type='text/javascript' src="{{asset('public/js/jquery.js')}}"></script>
     <script src="{{ asset('public/js/jquery-3.2.1.min.js')}}"></script>
     <script type="text/javascript">
@@ -85,6 +86,7 @@
     <script type='text/javascript' src="{{asset('public/js/hoverIntent.min.js')}}"></script>
     <script type='text/javascript' src="{{asset('public/js/add.js')}}"></script>
     <script type='text/javascript' src="{{asset('public/js/cus.js')}}"></script>
+    <script type='text/javascript' src="{{asset('public/js/owl.carousel.min.js')}}"></script>
     <script type='text/javascript' src="{{asset('public/js/slick.min.js')}}"></script>
     <script type='text/javascript' src="{{asset('public/js/flatsome.js')}}"></script>
    <!-- <script type='text/javascript' src='js/wishlist.js'></script> -->

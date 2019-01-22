@@ -45,6 +45,7 @@
 								      	<label class="control-label" for="inputError"><i class="fa fa-times-circle-o"></i> {!! $errors->first('fImages'); !!}</label>
 								      	@endif
 									</div>
+
 						        	<div class="form-group hidden">
 								      	<label for="ten">Danh mục cha</label>
 								      	<select name="txtNewsCate" class="form-control">
@@ -75,7 +76,7 @@
 									@endif
 									
 								</div>
-								<div class="col-md-6 col-xs-12">
+								<!-- <div class="col-md-6 col-xs-12">
 									@if($_GET['type']=='dich-vu')
 									<div class="form-group @if ($errors->first('fImagesBg')!='') has-error @endif">
 										<div class="form-group">
@@ -95,7 +96,7 @@
 								      	@endif
 									</div>
 									@endif
-								</div>
+								</div> -->
 							</div>
 							<div class="clearfix"></div>
 	                  	</div><!-- /.tab-pane -->
@@ -122,17 +123,17 @@
 	            </div>
 	            <div class="clearfix"></div>
 			    <div class="col-md-6">
-			    	<div class="form-group">
+			    	<!-- <div class="form-group">
 					      <label for="ten">Số thứ tự</label>
 					      <input type="number" min="1" name="stt" value="{!! isset($data->status) ? $data->stt : (count($parent)+1) !!}" class="form-control" style="width: 100px;">
 				    </div>
-				    @if($_GET['type']=='thiet-ke')
+				    
 				    <div class="form-group">
 					    <label>
 				        	<input type="checkbox" name="hot" {!! (!isset($data->hot) || $data->hot==1)?'checked="checked"':'' !!}> Hiển thị trang chủ
 				    	</label>
-				    </div>
-				    @enif
+				    </div> -->
+				  
 				    <div class="form-group">
 					    <label>
 				        	<input type="checkbox" name="status" {!! (!isset($data->status) || $data->status==1)?'checked="checked"':'' !!}> Hiển thị
@@ -152,4 +153,4 @@
     </div><!-- /box -->
     
 </section><!-- /.content -->
-@endsection()
+@endsection

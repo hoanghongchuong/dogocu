@@ -37,18 +37,14 @@ class IndexController extends Controller {
 	public function index()
 	{
 		$news = DB::table('news')->where('status',1)->where('com','tin-tuc')->take(8)->orderBy('id','desc')->get();
-		$products = DB::table('products')->where('status',1)->take(20)->orderBy('id','desc')->get();
+		$products = Products::where('status',1)->where('com','san-pham')->take(20)->orderBy('id','desc')->get();
 		
 		$setting =DB::table('setting')->select()->where('id',1)->get()->first();
 		$about = DB::table('about')->where('com','gioi-thieu')->first();
-		$list_abouts = DB::table('gioithieu')->get();
-		$chinhanh = DB::table('chinhanh')->get();
-		$video = DB::table('video')->first();
-		$videos = DB::table('video')->orderBy('id','desc')->get();
-		
-		$about_first = DB::table('gioithieu')->first();
-		$images = DB::table('news')->where('status',1)->where('com','hinh-anh')->take(4)->orderBy('id','desc')->get();
-		$image_hot = DB::table('news')->where('status',1)->where('com','hinh-anh')->orderBy('id','desc')->first();
+		$cate_services = DB::table('news_categories')->where('com','dich-vu')->get();
+		$services = DB::table('news')->where('com','dich-vu')->take(10)->orderBy('id','desc')->get();
+		$news = DB::table('news')->where('com','tin-tuc')->take(10)->orderBy('id','desc')->get();
+		$sliders = DB::table('slider')->where('com','gioi-thieu')->where('status',1)->get();
 		$category_products = DB::table('product_categories')->where('com','san-pham')->get();		
 		$title = $setting->title;
 		$keyword = $setting->keyword;
@@ -56,7 +52,7 @@ class IndexController extends Controller {
 		$com = 'index';
 		// End cấu hình SEO
 		$img_share = asset('upload/hinhanh/'.$setting->photo);
-		return view('templates.index_tpl', compact('com','keyword','description','title','img_share','category_products','images','categories_home','about_first','news','about','video','list_abouts','image_hot','chinhanh','videos'));
+		return view('templates.index_tpl', compact('com','keyword','description','title','img_share','category_products','images','products','services','news','about','video','sliders','cate_services'));
 	}
 	public function getProduct(Request $req)
 	{
@@ -177,12 +173,7 @@ class IndexController extends Controller {
 		$keyword = $about->keyword;
 		return view('templates.detail_about', compact('title','description','keyword', 'about','list_abouts'));
 	}
-	public function baogia()
-	{
-		$data = DB::table('about')->where('com','bao-gia')->first();
-		$title = 'Báo giá';	
-		return view('templates.baogia',compact('data','title'));
-	}
+	
 	public function search(Request $request)
 	{
 		$search = $request->txtSearch;
@@ -226,7 +217,7 @@ class IndexController extends Controller {
 			$tintuc = DB::table('news')->select()->where('status',1)->where('cate_id',$tintuc_cate->id)->orderBy('id','desc')->paginate(5);
 			$tintuc_moinhat_detail = DB::table('news')->select()->where('status',1)->where('com','tin-tuc')->orderby('created_at','desc')->take(6)->get();
 			$hot_news = DB::table('news')->where('status',1)->where('com', 'tin-tuc')->where('noibat',1)->orderBy('stt','asc')->take(5)->get();
-			$setting = Cache::get('setting');
+			$about = DB::table('about')->where('com','gioi-thieu')->first();
 
 			if(!empty($tintuc_cate->title)){
 				$title = $tintuc_cate->title;
@@ -239,7 +230,7 @@ class IndexController extends Controller {
 			$img_share = asset('upload/news/'.$tintuc_cate->photo);
 
 			// End cấu hình SEO
-			return view('templates.news_list', compact('tintuc','tintuc_cate','banner_danhmuc','keyword','description','title','img_share','tintuc_moinhat_detail','hot_news', 'cateNews'));
+			return view('templates.news_list', compact('tintuc','tintuc_cate','banner_danhmuc','keyword','description','title','img_share','tintuc_moinhat_detail','hot_news', 'cateNews','about'));
 		}else{
 			return redirect()->route('getErrorNotFount');
 		}
@@ -248,7 +239,10 @@ class IndexController extends Controller {
 	public function getNewsDetail($id)
 	{
 		$news_detail = DB::table('news')->select()->where('status',1)->where('com','tin-tuc')->where('alias',$id)->first();
-		
+		$tintuc = DB::table('news')->select()->where('status',1)->where('com','tin-tuc')
+		->take(5)
+		->orderby('id','desc')->get();
+		$about = DB::table('about')->where('com','gioi-thieu')->first();
 		if(!empty($news_detail)){			
 			$cate_pro = DB::table('product_categories')->where('status',1)->where('parent_id',0)->orderby('id','asc')->get();			
 			$com='tin-tuc';
@@ -263,52 +257,57 @@ class IndexController extends Controller {
 			$description = $news_detail->description;
 			$img_share = asset('upload/news/'.$news_detail->photo);
 
-			return view('templates.news_detail_tpl', compact('news_detail','com','keyword','description','title','img_share','newsSameCate'));
+			return view('templates.news_detail_tpl', compact('news_detail','com','keyword','description','title','img_share','newsSameCate','tintuc','about'));
 		}else{
 			return redirect()->route('getErrorNotFount');
 		}
 		
 	}
 
-	public function design()
+	public function getDichvu()
 	{
-		$tintuc = DB::table('news')->select()->where('status',1)->where('com','thiet-ke')->orderby('id','desc')->paginate(18);
-		$com='thiet-ke';
+		$tintuc = DB::table('news')->select()->where('status',1)->where('com','dich-vu')->orderby('id','desc')->paginate(18);
+		$about = DB::table('about')->where('com','gioi-thieu')->first();
+		$com='dich-vu';
 		// Cấu hình SEO
 		$title = "Thiết kế";
 		$keyword = "Thiết kế";
 		$description = "Thiết kế";
 		$img_share = '';
 		// End cấu hình SEO
-		return view('templates.design', compact('tintuc','keyword','description','title','img_share','com'));
+		return view('templates.service', compact('tintuc','keyword','description','title','img_share','com','about'));
 	}
-	public function getListDesign($alias)
+	public function getListService($alias)
 	{
-		$tintuc_cate = DB::table('news_categories')->select()->where('status',1)->where('com','thiet-ke')->where('alias',$alias)->first();
+		$tintuc_cate = DB::table('news_categories')->select()->where('status',1)->where('com','dich-vu')->where('alias',$alias)->first();
 		if(!empty($tintuc_cate)){
-			$data = DB::table('news')->select()->where('status',1)->where('cate_id',$tintuc_cate->id)->orderBy('id','desc')->paginate(18);			
+			$about = DB::table('about')->where('com','gioi-thieu')->first();
+			$data = DB::table('news')->select()->where('status',1)->where('cate_id',$tintuc_cate->id)->orderBy('id','desc')->paginate(18);
+			$tintuc = DB::table('news')->select()->where('status',1)->where('cate_id',$tintuc_cate->id)->orderBy('id','desc')->take(5)->get();			
 			if(!empty($tintuc_cate->title)){
 				$title = $tintuc_cate->title;
 			}else{
 				$title = $tintuc_cate->name;
-			}			
+			}
+			$com = 'dich-vu';			
 			$keyword = $tintuc_cate->keyword;
 			$description = $tintuc_cate->description;
 			$img_share = asset('upload/news/'.$tintuc_cate->photo);
 			// End cấu hình SEO
-			return view('templates.design_list', compact('data','tintuc_cate','banner_danhmuc','keyword','description','title','img_share','tintuc_moinhat_detail','hot_news', 'cateNews'));
+			return view('templates.service_list', compact('tintuc','tintuc_cate','com','keyword','description','title','img_share','about','data', 'cateNews'));
 		}else{
 			return redirect()->route('getErrorNotFount');
 		}
 	}
-	public function getDesignDetail($alias)
+	public function getServiceDetail($alias)
 	{
-		$news_detail = DB::table('news')->where('status',1)->where('com','thiet-ke')->where('alias',$alias)->first();		
+		$news_detail = DB::table('news')->where('status',1)->where('com','dich-vu')->where('alias',$alias)->first();		
 		if(!empty($news_detail)){			
 			$news_cate = DB::table('news_categories')->where('id', $news_detail->cate_id)->first();	
 			$postSame = DB::table('news')->where('status',1)->where('cate_id', $news_detail->cate_id)->take(5)->orderBy('id','desc')->get();
 			// dd($postSame);	
-			$com='thiet-ke';			
+			$com='dich-vu';
+			$about = DB::table('about')->where('com','gioi-thieu')->first();			
 			// Cấu hình SEO
 			if(!empty($news_detail->title)){
 				$title = $news_detail->title;
@@ -318,7 +317,7 @@ class IndexController extends Controller {
 			$keyword = $news_detail->keyword;
 			$description = $news_detail->description;
 			$img_share = asset('upload/news/'.$news_detail->photo);
-			return view('templates.design_detail', compact('news_detail','com','keyword','description','title','img_share','postSame','news_cate'));
+			return view('templates.service_detail', compact('news_detail','com','keyword','description','title','img_share','postSame','news_cate','about'));
 		}else{
 			return redirect()->route('getErrorNotFount');
 		}

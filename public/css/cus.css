@@ -86,7 +86,14 @@
 .slick-dots{
     display: none !important;
 }
-
+.des-home{
+    font-size: 20px !important;
+    color: #fff !important;
+    margin-top: 20px;
+}
+.owl-carousel .owl-nav{
+    display: none;
+}
 
 
 @media (max-width: 767px){

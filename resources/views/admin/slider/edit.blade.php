@@ -68,14 +68,14 @@
 					      	<label class="control-label" for="inputError"><i class="fa fa-times-circle-o"></i> {!! $errors->first('txtName'); !!}</label>
 					      	@endif
 						</div>
-						<div class="form-group">
+						<!-- <div class="form-group">
 					      	<label for="alias">Link liên kết</label>
 					      	<input type="text" name="txtLink" id="txtLink" value="{{ $data->link }}"  class="form-control" />
 						</div>
 						<div class="form-group">
 					      	<label for="alias">Mô tả</label>
 					      	<textarea name="txtDesc" id="" cols="50" class="form-control" rows="5">{{ $data->mota }}</textarea>
-						</div>
+						</div> -->
 
 					</div>
 					<!-- 

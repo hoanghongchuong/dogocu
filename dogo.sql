@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th1 17, 2019 lúc 10:22 AM
+-- Thời gian đã tạo: Th1 22, 2019 lúc 10:27 AM
 -- Phiên bản máy phục vụ: 10.1.36-MariaDB
 -- Phiên bản PHP: 7.2.10
 
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Cơ sở dữ liệu: `abs`
+-- Cơ sở dữ liệu: `dogo`
 --
 
 -- --------------------------------------------------------
@@ -54,7 +54,7 @@ CREATE TABLE `about` (
 INSERT INTO `about` (`id`, `user_id`, `name`, `alias`, `photo`, `background`, `mota`, `link`, `content`, `status`, `title`, `keyword`, `description`, `com`, `created_at`, `updated_at`) VALUES
 (1, 8, 'Tầm nhìn', 'tam-nhin', '1533089542_about-1.jpg', NULL, NULL, NULL, '<p>Tầm nh&igrave;n của ch&uacute;ng t&ocirc;i được ho&agrave;n thiện khi mỗi gia đ&igrave;nh tr&ecirc;n đất nước Việt Nam đều c&oacute; &iacute;t nhất một sản phẩm nội thất của Vidcom</p>', 0, NULL, NULL, NULL, 'tam-nhin', '2018-08-01 02:12:22', '2018-07-31 19:12:22'),
 (2, 8, 'Sứ mệnh', 'su-menh', '1533089598_about-2.jpg', NULL, NULL, NULL, '<p>Sứ mệnh của Vidcom l&agrave; cung cấp c&aacute;c sản phẩm nội thất c&oacute; thiết kế v&agrave; c&ocirc;ng năng ph&ugrave; hợp đi k&egrave;m với gi&aacute; cả phải chăng. Ch&uacute;ng t&ocirc;i cũng cung cấp dịch vụ tư vấn thiết kế nội thất v&agrave; vận chuyển sản phẩm đến từng gia đ&igrave;nh Việt Nam th&ocirc;ng qua c&aacute;c dịch vụ vận chuyển đa dạng.</p>', 0, NULL, NULL, NULL, 'su-menh', '2018-08-01 02:13:18', '2018-07-31 19:13:18'),
-(3, 8, 'Về chúng tôi', 've-chung-toi', '1547277154_about.png', '1542881433_img_intro2.png', '<p>C&ocirc;ng ty cổ phần kiến tr&uacute;c - nội thất City Build l&agrave; một trong số những c&ocirc;ng ty nội thất h&agrave;ng đầu Việt Nam hoạt động tr&ecirc;n những lĩnh vực ch&iacute;nh như: tư vấn thiết kế kiến tr&uacute;c, thiết kế nội thất, được kh&aacute;ch h&agrave;ng tin tưởng v&agrave; lu&ocirc;n được đ&aacute;nh gi&aacute; l&agrave; địa chỉ v&agrave;ng cho những dịch vụ x&acirc;y dựng nơi đem lại chất lượng tốt nhất v&agrave; ...</p>', NULL, '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo&nbsp;consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse&nbsp;cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non&nbsp;proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod&nbsp;tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,&nbsp;quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo&nbsp;consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse&nbsp;cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non&nbsp;proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\r\n<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod&nbsp;tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,&nbsp;quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo&nbsp;consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse&nbsp;cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non&nbsp;proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>', 0, NULL, NULL, NULL, 'gioi-thieu', '2019-01-12 07:12:34', '2019-01-12 07:12:34'),
+(3, 8, 'Về chúng tôi', 've-chung-toi', '1547277154_about.png', '1542881433_img_intro2.png', '<p>Đồ gỗ cũ Tiến Thắng chuy&ecirc;n thu mua đồ gỗ cũ, nội thất cũ, đồ gỗ cổ, giả cổ. Ch&uacute;ng t&ocirc;i với phương ch&acirc;m phục vụ tận t&igrave;nh chu đ&aacute;o. Gi&aacute; chuẩn c&aacute;c mặt h&agrave;ng của q&uacute;y kh&aacute;ch. C&oacute; phần trăm cao đối với kh&aacute;ch h&agrave;ng v&agrave; người giới thiệu.</p>\r\n<p>Trung t&acirc;m cũng thanh l&yacute; rất nhiều c&aacute;c sản phẩm nội thất cũ với gi&aacute; cực tốt<br />Ch&uacute;ng t&ocirc;i cam kết mang tới cho qu&yacute; kh&aacute;ch h&agrave;ng dịch vụ tốt nhất, th&aacute;i độ phục vụ nhiệt t&igrave;nh, chuy&ecirc;n nghiệp.</p>', NULL, '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo&nbsp;consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse&nbsp;cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non&nbsp;proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod&nbsp;tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,&nbsp;quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo&nbsp;consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse&nbsp;cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non&nbsp;proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\r\n<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod&nbsp;tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,&nbsp;quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo&nbsp;consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse&nbsp;cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non&nbsp;proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>', 0, NULL, NULL, NULL, 'gioi-thieu', '2019-01-21 08:03:01', '2019-01-21 08:03:01'),
 (6, 8, NULL, '', NULL, NULL, NULL, NULL, '<p>Nội dung b&aacute;o gi&aacute;</p>', 0, NULL, NULL, NULL, 'bao-gia', '2018-11-22 02:22:11', '2018-11-22 02:22:11'),
 (4, 8, 'Giá trị cốt lõi', 'gia-tri-cot-loi', NULL, NULL, NULL, NULL, '<h3 class=\"vk-about__title-sub\">CON NGƯỜI</h3>\r\n<p>Đại diện cho nền tảng của thương hiệu UMA. Điều n&agrave;y được thể hiện bằng việc ch&uacute;ng t&ocirc;i quan t&acirc;m đến c&aacute;ch sống v&agrave; l&agrave;m việc của kh&aacute;ch h&agrave;ng cũng như cung cấp cho mỗi nh&acirc;n vi&ecirc;n một m&ocirc;i trường l&agrave;m việc l&agrave;nh mạnh, cơ hội để học hỏi v&agrave; ph&aacute;t triển. UMA cũng đ&aacute;nh gi&aacute; cao sự đa dạng v&agrave; kh&aacute;c biệt văn h&oacute;a, nhằm phấn đấu cải thiện chất lượng cuộc sống của cộng đồng.</p>\r\n<h3 class=\"vk-about__title-sub\">THIẾT KẾ</h3>\r\n<p>L&agrave; đặc điểm tạo n&ecirc;n sự kh&aacute;c biệt của ch&uacute;ng t&ocirc;i. Những thiết kế được li&ecirc;n tục ph&aacute;t triển v&agrave; khuyến kh&iacute;ch tự đ&aacute;nh gi&aacute; để ho&agrave;n thiện. C&aacute;c xu hướng hiện đại lu&ocirc;n được phản &aacute;nh trong thiết kế của Vidcom, nhưng cũng đảm bảo kh&ocirc;ng mất đi n&eacute;t văn h&oacute;a Việt Nam. Điều n&agrave;y gi&uacute;p Vidcom trở th&agrave;nh một trong những c&ocirc;ng ty thiết kế nội thất chủ đạo ở Việt Nam.</p>\r\n<h3 class=\"vk-about__title-sub\">DỊCH VỤ</h3>\r\n<p>Lu&ocirc;n được đảm bảo t&iacute;nh tối ưu, lấy kh&aacute;ch h&agrave;ng l&agrave;m trọng t&acirc;m v&agrave; thể hiện sự thấu hiểu nhu cầu của kh&aacute;ch h&agrave;ng trong việc giao h&agrave;ng, thiết kế nội thất, lắp đặt cũng như tư vấn chuy&ecirc;n nghiệp tại cửa h&agrave;ng lẫn tr&ecirc;n website.</p>\r\n<h3 class=\"vk-about__title-sub\">SỰ PH&Aacute;T TRIỂN</h3>\r\n<p>Bất kể Vidcom muốn x&acirc;y dựng c&aacute;c thiết kế, dẫn đầu xu thế cạnh tranh hoặc đảm bảo tương lai th&igrave; Vidcom vẫn lu&ocirc;n lu&ocirc;n cần phải ph&aacute;t triển.</p>', 0, NULL, NULL, NULL, 'cot-loi', '2018-08-01 02:17:25', '2018-07-31 19:17:25'),
 (5, 8, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, 'taisao', '2018-08-01 00:29:56', '2018-08-01 00:29:56');
@@ -425,18 +425,16 @@ CREATE TABLE `images` (
 --
 
 INSERT INTO `images` (`id`, `product_id`, `news_id`, `name`, `alias`, `photo`, `status`, `image_path`, `alt`, `stt`, `created_at`, `updated_at`) VALUES
-(7, 1, NULL, NULL, NULL, '1542859805_5 - Copy (2).jpg', 1, NULL, NULL, 0, '2018-11-22 04:10:05', '2018-11-22 04:10:05'),
-(2, 1, NULL, NULL, NULL, '1542856598_4.jpg', 1, NULL, NULL, 0, '2018-11-22 03:16:38', '2018-11-22 03:16:38'),
-(9, 3, NULL, NULL, NULL, '1546567276_c2.png', 1, NULL, NULL, 0, '2019-01-04 02:01:16', '2019-01-04 02:01:16'),
-(5, 2, NULL, NULL, NULL, '1542856872_4.jpg', 1, NULL, NULL, 0, '2018-11-22 03:21:12', '2018-11-22 03:21:12'),
-(6, 2, NULL, NULL, NULL, '1542856872_5 - Copy - Copy.jpg', 1, NULL, NULL, 0, '2018-11-22 03:21:12', '2018-11-22 03:21:12'),
-(8, 1, NULL, NULL, NULL, '1542859805_111.jpg', 1, NULL, NULL, 0, '2018-11-22 04:10:05', '2018-11-22 04:10:05'),
-(10, 3, NULL, NULL, NULL, '1546567276_c3.jpg', 1, NULL, NULL, 0, '2019-01-04 02:01:16', '2019-01-04 02:01:16'),
-(11, 3, NULL, NULL, NULL, '1546567276_c4.jpg', 1, NULL, NULL, 0, '2019-01-04 02:01:16', '2019-01-04 02:01:16'),
+(20, 3, NULL, NULL, NULL, '1548141466_70.mua-do-go-cu-huyen-dan-phuong-270.mua-do-go-cu-huyen-dan-phuong-2.jpg', 1, NULL, NULL, 0, '2019-01-22 07:17:46', '2019-01-22 07:17:46'),
+(16, 1, NULL, NULL, NULL, '1548130973_63.mua-do-go-cu-quan-ha-dong-263.mua-do-go-cu-quan-ha-dong-2-533x400.jpg', 1, NULL, NULL, 0, '2019-01-22 04:22:53', '2019-01-22 04:22:53'),
+(19, 3, NULL, NULL, NULL, '1548141466_69.mua-do-go-cu-huyen-chuong-my-269.mua-do-go-cu-huyen-chuong-my-2-533x400.jpg', 1, NULL, NULL, 0, '2019-01-22 07:17:46', '2019-01-22 07:17:46'),
 (12, 0, 22, NULL, NULL, '1547606003_anh1.JPG', 1, NULL, NULL, 0, '2019-01-16 02:33:23', '2019-01-16 02:33:23'),
 (13, 0, 22, NULL, NULL, '1547606003_anh2.jpg', 1, NULL, NULL, 0, '2019-01-16 02:33:23', '2019-01-16 02:33:23'),
 (14, 0, 23, NULL, NULL, '1547696067_anh1.JPG', 1, NULL, NULL, 0, '2019-01-17 03:34:27', '2019-01-17 03:34:27'),
-(15, 0, 23, NULL, NULL, '1547696067_anh2.jpg', 1, NULL, NULL, 0, '2019-01-17 03:34:27', '2019-01-17 03:34:27');
+(15, 0, 23, NULL, NULL, '1547696067_anh2.jpg', 1, NULL, NULL, 0, '2019-01-17 03:34:27', '2019-01-17 03:34:27'),
+(17, 1, NULL, NULL, NULL, '1548130973_65.mua-do-go-cu-huyen-ba-vi-365.mua-do-go-cu-huyen-ba-vi-3-533x400.jpg', 1, NULL, NULL, 0, '2019-01-22 04:22:53', '2019-01-22 04:22:53'),
+(18, 1, NULL, NULL, NULL, '1548130973_70.mua-do-go-cu-huyen-dan-phuong-270.mua-do-go-cu-huyen-dan-phuong-2.jpg', 1, NULL, NULL, 0, '2019-01-22 04:22:53', '2019-01-22 04:22:53'),
+(21, 3, NULL, NULL, NULL, '1548141466_71.mua-do-go-cu-huyen-hoai-duc-271.mua-do-go-cu-huyen-hoai-duc-2-533x400.jpg', 1, NULL, NULL, 0, '2019-01-22 07:17:46', '2019-01-22 07:17:46');
 
 -- --------------------------------------------------------
 
@@ -585,10 +583,11 @@ CREATE TABLE `news` (
 --
 
 INSERT INTO `news` (`id`, `cate_id`, `user_id`, `name`, `alias`, `photo`, `background`, `mota`, `content`, `status`, `noibat`, `home`, `title`, `keyword`, `description`, `com`, `stt`, `created_at`, `updated_at`) VALUES
-(1, 0, 8, 'Cơ hội mới cho lao động Việt Nam ở Nhật', 'co-hoi-moi-cho-lao-dong-viet-nam-o-nhat', '1547541995_tintuc1.jpg', '', 'Chế độ mới được thực thi từ ngày 1/7/2010 này quy định thực tập sinh kỹ năng phải ký hợp đồng lao động với doanh nghiệp tiếp nhận trước khi qua Nhật Bản. Do đó, sau khi được cơ quan tiếp nhận phỏng vấn và được chọn làm thực tập sinh kỹ năng thì cần phải ký hợp đồng lao động với doanh nghiệp tiếp nhận.', '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>\r\n<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>', 1, 0, 0, NULL, NULL, NULL, 'tin-tuc', 1, '2019-01-15 08:46:35', '2019-01-15 08:46:35'),
-(2, 0, 8, 'Đạt kế hoạch năm 2018 về xuất khẩu lao động', 'dat-ke-hoach-nam-2018-ve-xuat-khau-lao-dong', '1547542038_tintuc2.jpg', '', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>', 1, 0, 0, NULL, NULL, NULL, 'tin-tuc', 2, '2019-01-15 08:47:18', '2019-01-15 08:47:18'),
-(3, 0, 8, 'Tin tức 3', 'tin-tuc-3', '1547542085_tintuc3.jpg', '', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>\r\n<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>', 1, 0, 0, NULL, NULL, NULL, 'tin-tuc', 3, '2019-01-15 08:48:05', '2019-01-15 08:48:05'),
-(4, 0, 8, 'Tin tức 4', 'tin-tuc-4', '1547542100_tintuc2.jpg', '', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>\r\n<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>', 1, 0, 0, NULL, NULL, NULL, 'tin-tuc', 4, '2019-01-15 08:48:20', '2019-01-15 08:48:20'),
+(1, 0, 8, 'Cơ hội mới cho lao động Việt Nam ở Nhật', 'co-hoi-moi-cho-lao-dong-viet-nam-o-nhat', '1548056225_thu-mua-do-go-tai-quan-tay-ho-cam-ket-gia-cao-2-533x400.jpg', '', 'Chế độ mới được thực thi từ ngày 1/7/2010 này quy định thực tập sinh kỹ năng phải ký hợp đồng lao động với doanh nghiệp tiếp nhận trước khi qua Nhật Bản. Do đó, sau khi được cơ quan tiếp nhận phỏng vấn và được chọn làm thực tập sinh kỹ năng thì cần phải ký hợp đồng lao động với doanh nghiệp tiếp nhận.', '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>\r\n<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>', 1, 0, 0, NULL, NULL, NULL, 'tin-tuc', 1, '2019-01-21 07:37:05', '2019-01-21 07:37:05'),
+(2, 0, 8, 'Đạt kế hoạch năm 2018 về xuất khẩu lao động', 'dat-ke-hoach-nam-2018-ve-xuat-khau-lao-dong', '1548056237_65.mua-do-go-cu-huyen-ba-vi-365.mua-do-go-cu-huyen-ba-vi-3-533x400.jpg', '', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>', 1, 0, 0, NULL, NULL, NULL, 'tin-tuc', 2, '2019-01-21 07:37:17', '2019-01-21 07:37:17'),
+(3, 0, 8, 'Tin tức 3', 'tin-tuc-3', '1548056244_70.mua-do-go-cu-huyen-dan-phuong-270.mua-do-go-cu-huyen-dan-phuong-2.jpg', '', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit', '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>\r\n<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>', 1, 0, 0, NULL, NULL, NULL, 'tin-tuc', 3, '2019-01-21 07:59:53', '2019-01-21 07:59:53'),
+(24, 0, 8, 'Tin tucs demo 2df', 'tin-tucs-demo-2df', '1548057636_Cua-hang-thu-mua-do-go-cu-o-dau-tra-gia-cao-nhat-4-1-537x400.jpg', '', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore', '<p>Nội dung chi tiết tin tức</p>', 1, 0, 0, NULL, NULL, NULL, 'tin-tuc', 5, '2019-01-22 07:02:04', '2019-01-22 07:02:04'),
+(4, 0, 8, 'Tin tức 4', 'tin-tuc-4', '1548056251_77.mua-do-go-cu-huyen-me-linh-377.mua-do-go-cu-huyen-me-linh-3-533x400.jpg', '', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>\r\n<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>', 1, 0, 0, NULL, NULL, NULL, 'tin-tuc', 4, '2019-01-21 07:37:31', '2019-01-21 07:37:31'),
 (5, 0, 8, 'Cong trình 1', 'cong-trinh-1', '1547281159_news1.png', '', NULL, NULL, 1, 0, 0, NULL, NULL, NULL, 'anh-cong-trinh', 1, '2019-01-12 08:19:19', '2019-01-12 08:19:19'),
 (6, 0, 8, 'Công trình 2', 'cong-trinh-2', '1547281171_news2.png', '', NULL, NULL, 1, 0, 0, NULL, NULL, NULL, 'anh-cong-trinh', 2, '2019-01-12 08:19:31', '2019-01-12 08:19:31'),
 (7, 0, 8, 'Công trình 3', 'cong-trinh-3', '1547281804_news4.png', '', NULL, NULL, 1, 0, 0, NULL, NULL, NULL, 'anh-cong-trinh', 3, '2019-01-12 08:30:04', '2019-01-12 08:30:04'),
@@ -607,7 +606,12 @@ INSERT INTO `news` (`id`, `cate_id`, `user_id`, `name`, `alias`, `photo`, `backg
 (20, 2, 8, 'Thiết kế ngoại thất demo 1', 'thiet-ke-ngoai-that-demo-1', '1547436250_sv2.png', '', NULL, NULL, 1, 0, 0, NULL, NULL, NULL, 'thiet-ke', 7, '2019-01-14 03:24:10', '2019-01-14 03:24:10'),
 (21, 2, 8, 'Thiết kế ngoại thất demo 2', 'thiet-ke-ngoai-that-demo-2', '1547436272_news2.png', '', NULL, NULL, 1, 0, 0, NULL, NULL, NULL, 'thiet-ke', 8, '2019-01-14 03:24:32', '2019-01-14 03:24:32'),
 (22, 0, 8, 'Hội thao abs Việt Nam', 'hoi-thao-abs-viet-nam', '1547606003_anh1.JPG', '', NULL, NULL, 1, 1, 0, NULL, NULL, NULL, 'hinh-anh', 1, '2019-01-17 03:40:34', '2019-01-17 03:40:34'),
-(23, 0, 8, 'Cuộc sống của TTS ABS tại Nhật bản', 'cuoc-song-cua-tts-abs-tai-nhat-ban', '1547696067_anh2.jpg', '', NULL, NULL, 1, 0, 0, NULL, NULL, NULL, 'hinh-anh', 2, '2019-01-17 03:34:27', '2019-01-17 03:34:27');
+(23, 0, 8, 'Cuộc sống của TTS ABS tại Nhật bản', 'cuoc-song-cua-tts-abs-tai-nhat-ban', '1547696067_anh2.jpg', '', NULL, NULL, 1, 0, 0, NULL, NULL, NULL, 'hinh-anh', 2, '2019-01-17 03:34:27', '2019-01-17 03:34:27'),
+(25, 6, 8, 'Mua đồ gỗ cũ cổ giá sập sụ tủ chè các loại', 'mua-do-go-cu-co-gia-sap-su-tu-che-cac-loai', '1548132679_37715129_2119652791610944_4790275624793014272_n.jpg', '', NULL, NULL, 1, 0, 0, NULL, NULL, NULL, 'dich-vu', 1, '2019-01-22 04:59:19', '2019-01-22 04:59:19'),
+(26, 7, 8, 'Đồ gỗ cũ demo 2', 'do-go-cu-demo-2', '1548132873_77.mua-do-go-cu-huyen-me-linh-377.mua-do-go-cu-huyen-me-linh-3-533x400.jpg', '', NULL, NULL, 1, 0, 0, NULL, NULL, NULL, 'dich-vu', 2, '2019-01-22 04:59:35', '2019-01-22 04:59:35'),
+(27, 7, 8, 'dịch vụ demo 3', 'dich-vu-demo-3', '1548132894_70.mua-do-go-cu-huyen-dan-phuong-270.mua-do-go-cu-huyen-dan-phuong-2.jpg', '', NULL, NULL, 1, 0, 0, NULL, NULL, NULL, 'dich-vu', 3, '2019-01-22 04:59:41', '2019-01-22 04:59:41'),
+(28, 6, 8, 'Dịch vụ demo 2 3 sdf', 'dich-vu-demo-2-3-sdf', '1548132920_40640865_2158978534345036_1129430060722290688_n.jpg', '', NULL, '<p>Nội dung chi tiết&nbsp;</p>\r\n<p><img src=\"http://localhost/dogocu/upload/65.mua-do-go-cu-huyen-ba-vi-365.mua-do-go-cu-huyen-ba-vi-3-533x400.jpg\" alt=\"\" width=\"533\" height=\"400\" /></p>', 1, 0, 0, NULL, NULL, NULL, 'dich-vu', 4, '2019-01-22 07:15:27', '2019-01-22 07:15:27'),
+(29, 0, 8, 'Tin tucs dem o dsdf', 'tin-tucs-dem-o-dsdf', '1548144598_45671269_2191160594460163_6284610852922327040_n.jpg', '', NULL, NULL, 1, 0, 0, NULL, NULL, NULL, 'tin-tuc', 6, '2019-01-22 08:09:58', '2019-01-22 08:09:58');
 
 -- --------------------------------------------------------
 
@@ -653,7 +657,7 @@ CREATE TABLE `news_categories` (
   `keyword` longtext COLLATE utf8_unicode_ci,
   `description` longtext COLLATE utf8_unicode_ci,
   `com` text COLLATE utf8_unicode_ci,
-  `stt` int(11) NOT NULL DEFAULT '0',
+  `stt` int(11) DEFAULT '0',
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `background` text COLLATE utf8_unicode_ci,
   `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00'
@@ -668,7 +672,10 @@ INSERT INTO `news_categories` (`id`, `name`, `alias`, `photo`, `mota`, `status`,
 (2, 'Thiết kế ngoại thất', 'thiet-ke-ngoai-that', '1547432514_sv2.png', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', 1, 1, 0, 0, NULL, NULL, NULL, 'thiet-ke', 2, '2019-01-14 02:28:14', '', '2019-01-14 02:28:14'),
 (3, 'Danh mục thi công 1', 'danh-muc-thi-cong-1', '', NULL, 1, 0, 0, 0, NULL, NULL, NULL, 'thi-cong', 1, '2019-01-14 02:17:38', '', '2019-01-14 02:17:38'),
 (4, 'Danh mục thi công 2', 'danh-muc-thi-cong-2', '', NULL, 1, 0, 0, 0, NULL, NULL, NULL, 'thi-cong', 2, '2019-01-14 02:17:46', '', '2019-01-14 02:17:46'),
-(5, 'Danh mục thi công 3', 'danh-muc-thi-cong-3', '', NULL, 1, 0, 0, 0, NULL, NULL, NULL, 'thi-cong', 3, '2019-01-14 02:17:55', '', '2019-01-14 02:17:55');
+(5, 'Danh mục thi công 3', 'danh-muc-thi-cong-3', '', NULL, 1, 0, 0, 0, NULL, NULL, NULL, 'thi-cong', 3, '2019-01-14 02:17:55', '', '2019-01-14 02:17:55'),
+(6, 'Thu mua đồ cũ giá cao nhất HN', 'thu-mua-do-cu-gia-cao-nhat-hn', '1548142534_40640865_2158978534345036_1129430060722290688_n.jpg', NULL, 1, 0, 0, 0, NULL, NULL, NULL, 'dich-vu', NULL, '2019-01-22 07:35:34', '', '2019-01-22 07:35:34'),
+(7, 'Mua nhanh - lịch sự - uy tín', 'mua-nhanh-lich-su-uy-tin', '1548142550_23659151_1992863964289828_741489752915823699_n.jpg', NULL, 1, 0, 0, 0, NULL, NULL, NULL, 'dich-vu', NULL, '2019-01-22 07:35:50', '', '2019-01-22 07:35:50'),
+(8, 'Bảo hành dài lâu', 'bao-hanh-dai-lau', '1548142556_23659151_1992863964289828_741489752915823699_n.jpg', NULL, 1, 0, 0, 0, NULL, NULL, NULL, 'dich-vu', NULL, '2019-01-22 07:35:56', '', '2019-01-22 07:35:56');
 
 -- --------------------------------------------------------
 
@@ -781,8 +788,12 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id`, `user_id`, `cate_id`, `code`, `color_id`, `stt`, `name`, `alias`, `photo`, `price`, `numb`, `date_test`, `address`, `sale`, `price_old`, `mota`, `content`, `thuonghieu`, `tinhtrang`, `baohanh`, `properties`, `model`, `namsanxuat`, `ratepoint`, `quatang`, `huongdan`, `vanchuyen`, `noibat`, `spbc`, `com`, `status`, `title`, `keyword`, `description`, `created_at`, `updated_at`) VALUES
-(1, 8, 1, NULL, 'null', 1, 'đơn hàng 1', 'don-hang-1', '', 400000, 347, '2019-01-25', 'Vạn Phúc, Hà Đông, Hà Nọi', 0, 0, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 'san-pham', 1, NULL, NULL, NULL, '2019-01-17 07:32:13', '2019-01-17 07:32:13'),
-(2, 0, 2, NULL, NULL, 2, 'Tuyển 100 công nhân dệt may', 'tuyen-100-cong-nhan-det-may', '', 4000000, 199, '2019-01-20', 'Hà Đông, Hà Nội', 0, 0, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 'san-pham', 1, NULL, NULL, NULL, '2019-01-17 07:32:58', '2019-01-17 07:32:58');
+(1, 8, 1, NULL, 'null', 1, 'Sản phẩm 1', 'san-pham-1', '1548061152_65.mua-do-go-cu-huyen-ba-vi-365.mua-do-go-cu-huyen-ba-vi-3-533x400.jpg', 0, NULL, NULL, NULL, 0, 0, '<p>sdf sdf&nbsp;</p>', NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 'san-pham', 1, NULL, NULL, NULL, '2019-01-21 08:59:12', '2019-01-21 08:59:12'),
+(2, 8, 1, NULL, 'null', 2, 'Sản phẩm 2', 'san-pham-2', '1548061141_63.mua-do-go-cu-quan-ha-dong-263.mua-do-go-cu-quan-ha-dong-2-533x400.jpg', 0, NULL, NULL, NULL, 0, 0, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 'san-pham', 1, NULL, NULL, NULL, '2019-01-22 07:17:12', '2019-01-22 07:17:12'),
+(3, 8, 1, NULL, 'null', 3, 'Sản phẩm 3', 'san-pham-3', '1548061170_72.mua-do-go-cu-huyen-thanh-oai-272.mua-do-go-cu-huyen-thanh-oai-2-533x400.jpg', 0, NULL, NULL, NULL, 0, 0, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 'san-pham', 1, NULL, NULL, NULL, '2019-01-22 07:17:46', '2019-01-22 07:17:46'),
+(4, 8, 2, NULL, 'null', 4, 'Nội thất phòng bếp23', 'noi-that-phong-bep23', '1548061184_37706197_2119652781610945_1135396766728847360_n.jpg', 0, NULL, NULL, NULL, 0, 0, '<p>Nooij dung mo ta</p>', '<p>Nooij dung chi tiet</p>', NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 'san-pham', 1, NULL, NULL, NULL, '2019-01-22 03:43:52', '2019-01-22 03:43:52'),
+(5, 0, 1, NULL, NULL, 5, 'Sản phẩm demo 3xsf', 'san-pham-demo-3xsf', '1548143826_71.mua-do-go-cu-huyen-hoai-duc-271.mua-do-go-cu-huyen-hoai-duc-2-533x400.jpg', 0, NULL, NULL, NULL, 0, 0, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 'san-pham', 1, NULL, NULL, NULL, '2019-01-22 07:57:06', '2019-01-22 07:57:06'),
+(6, 0, 1, NULL, NULL, 6, 'Sản phẩm 2 demo dfs', 'san-pham-2-demo-dfs', '1548143844_75.mua-do-go-cu-huyen-thuong-tin-475.mua-do-go-cu-huyen-thuong-tin-4-533x400.jpg', 0, NULL, NULL, NULL, 0, 0, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 'san-pham', 1, NULL, NULL, NULL, '2019-01-22 07:57:24', '2019-01-22 07:57:24');
 
 -- --------------------------------------------------------
 
@@ -814,9 +825,8 @@ CREATE TABLE `product_categories` (
 --
 
 INSERT INTO `product_categories` (`id`, `parent_id`, `stt`, `name`, `alias`, `photo`, `noibat`, `mota`, `status`, `lever`, `com`, `title`, `keyword`, `description`, `created_at`, `updated_at`) VALUES
-(1, 0, 1, 'Kiểm hàng hoàn thiện sản phẩm', 'kiem-hang-hoan-thien-san-pham', '1547544899_dg.jpg', 0, NULL, 1, 0, 'san-pham', NULL, NULL, NULL, '2019-01-15 09:34:59', '2019-01-15 09:34:59'),
-(2, 0, 2, 'Dệt may', 'det-may', '1547544784_det.jpg', 0, NULL, 1, 0, 'san-pham', NULL, NULL, NULL, '2019-01-15 09:33:04', '2019-01-15 09:33:04'),
-(3, 0, 3, 'Công nghệ ô tô', 'cong-nghe-o-to', '1547544988_ckoto.jpg', 0, '<p>Nooij dung mo ta&nbsp;</p>', 1, 0, 'san-pham', NULL, NULL, NULL, '2019-01-17 08:05:51', '2019-01-17 08:05:51');
+(1, 0, 1, 'Nội thất phòng khách', 'noi-that-phong-khach', '', 0, NULL, 1, 0, 'san-pham', NULL, NULL, NULL, '2019-01-21 08:47:24', '2019-01-21 08:47:24'),
+(2, 0, 2, 'Nội thất phòng bếp', 'noi-that-phong-bep', '', 0, NULL, 1, 0, 'san-pham', NULL, NULL, NULL, '2019-01-21 08:47:48', '2019-01-21 08:47:48');
 
 -- --------------------------------------------------------
 
@@ -971,7 +981,7 @@ CREATE TABLE `setting` (
 --
 
 INSERT INTO `setting` (`id`, `name`, `title`, `company`, `website`, `address`, `phone`, `hotline`, `fax`, `email`, `photo`, `photo_footer`, `photo_page`, `favico`, `title_index`, `mota`, `content`, `facebook`, `twitter`, `skype`, `google`, `youtube`, `status`, `toado`, `copyright`, `iframemap`, `codechat`, `analytics`, `keyword`, `description`, `created_at`, `updated_at`) VALUES
-(1, 'ABS', 'ABS', 'ABS', NULL, 'Vạn Phúc, Hà Nội', '0987654321', NULL, NULL, 'acb@gmail.com', '1547622614_ABS_logo.png', '1547262822_logo_footer.png', '1542771860_logo1.png', '1547622621_ABS_logo.png', NULL, NULL, NULL, 'https://www.facebook.com/FacebookforDevelopers/', 'https://twitter.com/?lang=vi', NULL, 'https://plus.google.com/?hl=vi', NULL, 1, NULL, NULL, '<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.7749747466096!2d105.82069491439643!3d21.00165548601309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac8429ac32cb%3A0x592668996cef591f!2zMzE1IFRyxrDhu51uZyBDaGluaCwgS2jGsMahbmcgVGjGsOG7o25nLCDEkOG7kW5nIMSQYSwgSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1531887013298\" width=\"100%\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>', NULL, NULL, NULL, NULL, '2019-01-16 07:10:21', '2019-01-16 07:10:21');
+(1, 'Đồ gỗ cũ', 'Đồ gỗ cũ', 'Đồ gỗ cũ', NULL, 'Vạn Phúc, Hà Nội', '0987654321', NULL, NULL, 'acb@gmail.com', '1548055249_logo-1.png', '1548055249_logo-1.png', '1542771860_logo1.png', '1548055249_logo-1.png', NULL, NULL, NULL, 'https://www.facebook.com/FacebookforDevelopers/', 'https://twitter.com/?lang=vi', NULL, 'https://plus.google.com/?hl=vi', NULL, 1, NULL, NULL, '<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.7749747466096!2d105.82069491439643!3d21.00165548601309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac8429ac32cb%3A0x592668996cef591f!2zMzE1IFRyxrDhu51uZyBDaGluaCwgS2jGsMahbmcgVGjGsOG7o25nLCDEkOG7kW5nIMSQYSwgSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1531887013298\" width=\"100%\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>', NULL, NULL, NULL, NULL, '2019-01-21 07:20:50', '2019-01-21 07:20:50');
 
 -- --------------------------------------------------------
 
@@ -1003,8 +1013,8 @@ CREATE TABLE `slider` (
 --
 
 INSERT INTO `slider` (`id`, `user_id`, `name`, `link`, `photo`, `photo1`, `photo2`, `icon`, `mota`, `content`, `status`, `noibat`, `com`, `stt`, `created_at`, `updated_at`) VALUES
-(2, 8, 'WELCOME TO OUR SPA', NULL, '1547276856_slider.png', '', '', NULL, 'CHECK OUT OUT SERVICES AND OFFERS', NULL, 1, 0, 'gioi-thieu', 2, '2019-01-12 07:07:36', '2019-01-12 07:07:36'),
-(3, 8, 'WELCOME TO OUR SPA', NULL, '1547276866_slider.png', '', '', NULL, NULL, NULL, 1, 0, 'gioi-thieu', 2, '2019-01-12 07:07:46', '2019-01-12 07:07:46');
+(2, 8, '1', NULL, '1548141869_slideshow_1.jpg', '', '', NULL, NULL, NULL, 1, 0, 'gioi-thieu', 2, '2019-01-22 07:24:29', '2019-01-22 07:24:29'),
+(3, 8, '1', NULL, '1548141879_slideshow_3.jpg', '', '', NULL, NULL, NULL, 1, 0, 'gioi-thieu', 2, '2019-01-22 07:24:39', '2019-01-22 07:24:39');
 
 -- --------------------------------------------------------
 
@@ -1419,7 +1429,7 @@ ALTER TABLE `gioithieu`
 -- AUTO_INCREMENT cho bảng `images`
 --
 ALTER TABLE `images`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT cho bảng `lienket`
@@ -1437,7 +1447,7 @@ ALTER TABLE `menu`
 -- AUTO_INCREMENT cho bảng `news`
 --
 ALTER TABLE `news`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 
 --
 -- AUTO_INCREMENT cho bảng `newsletter`
@@ -1449,7 +1459,7 @@ ALTER TABLE `newsletter`
 -- AUTO_INCREMENT cho bảng `news_categories`
 --
 ALTER TABLE `news_categories`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT cho bảng `pages`
@@ -1467,13 +1477,13 @@ ALTER TABLE `partner`
 -- AUTO_INCREMENT cho bảng `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT cho bảng `product_categories`
 --
 ALTER TABLE `product_categories`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT cho bảng `province`

@@ -9,7 +9,7 @@
            <div class="row">
               <div class="large-12 text-center col">
                  <h1 class="page-title is-large uppercase">
-                   <span>Tin Tức</span>   
+                   <span>Dịch vụ / {{$tintuc_cate->name}}</span>   
                  </h1>
               </div>
            </div>
@@ -18,18 +18,18 @@
         <div class="row row-md row-large row-divided ">
             <div class="md-9  large-9 col">
                 <div class="row">
-                    @foreach($tintuc as $item)
+                    @foreach($data as $item)
                     <div class="col md-6 large-6">
                         <div class="img">
-                           <a href="{{url('tin-tuc/'.$item->alias.'.html')}}" title=""><img src="{{asset('upload/news/'.$item->photo)}}" alt="{{$item->name}}"></a>
+                           <a href="{{url('dich-vu/'.$item->alias.'.html')}}" title=""><img src="{{asset('upload/news/'.$item->photo)}}" alt="{{$item->name}}"></a>
                         </div>
                         <div class="text">
-                           <h1><a href="{{url('tin-tuc/'.$item->alias.'.html')}}" title="{{$item->name}}">{{$item->name}}</a></h1>
+                           <h1><a href="{{url('dich-vu/'.$item->alias.'.html')}}" title="{{$item->name}}">{{$item->name}}</a></h1>
                            <p>{!! $item->mota !!}</p>
                         </div>
                     </div>
                     @endforeach
-                    <div class="pagination">{!! $tintuc->links() !!}</div>
+                    <div class="pagination">{!! $data->links() !!}</div>
                 </div> 
               
               
